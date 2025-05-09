@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <div id=prooductList>
+        <div>Electric Guitar</div>
+        <div>Drum set</div>
+    </div>
+    <script>
+        let piano ='New Piano';
+        let newDiv=document.createElement('div');
+        newDiv.innerHTML=piano;
+         let prooductList=document.getElementById('prooductList');
+         prooductList.appendChild(newDiv);
+
+         let bass='New Bass';
+        let newDiv2=document.createElement('div');
+        newDiv2.innerHTML=bass;
+         prooductList.appendChild(newDiv2);
+    </script>
+</body>
+</html>
