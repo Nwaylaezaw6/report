@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addlist">ADD</button>
+    <ul id="ullist">
+        <li>one</li>
+        <li>two</li>
+    </ul>
+    <h1 id="id1">Nway Lae Zaw</h1>
+    <button onclick="document.getElementById('id1').style.color='red'">Click Change Color</button>
+    <script> 
+       var button=document.getElementById("addlist");   
+       var list=document.getElementById("ullist");
+       var make=document.createElement("li");
+       var text=document.createTextNode("three");
+       button.addEventListener("click",function(){
+        list.appendChild(make).appendChild(text);
+       })
+    </script>
+</body>
+</html>
