@@ -12,11 +12,16 @@
     <p id="message"></p>
     <script>
         function myFunction(){
-            var message,x;
-            message=document.getElementById("message");
-            message.innerHTML="";
-            x=ducument.getElementById("demo").value;
+            console.log("Catch it")
+            
+           var message=document.getElementById("message");
+            message.innerText="";
+           var x=document.getElementById("demo").value;
+            console.log(x);
             try{
+
+
+
                 if(x=="") throw "empty";
                 if(isNaN(x)) throw "not a number";
                  x=Number(x);
